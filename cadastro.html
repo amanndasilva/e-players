@@ -21,7 +21,8 @@
                 <ul>
                     <li><a href="index.html" title="Voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="index.html#horarios" title="Ir até a sessão de horários das partidas">HORÁRIOS</a></li>
-                    <li><a href="index.html#resultados"title="Ir até a sessão de resultados das partidas">RESULTADOS</a></li>
+                    <li><a href="index.html#resultados"
+                            title="Ir até a sessão de resultados das partidas">RESULTADOS</a></li>
                     <li><a href="index.html#noticias" title="Ir até a sessão de notícias">NOTÍCIAS</a></li>
                     <li><a href="#" title="Buscar conteúdo no site"><i class="fas fa-search"></i></a></li>
                 </ul>
@@ -34,7 +35,7 @@
         <div class="titulo_pagina">
             <h1>Cadastro de Jogador</h1>
         </div>
-        <form action="" method="post">
+        <form class="form_cadastro" action="" method="post">
 
             <div class="campo">
                 <label for="nome">nome do jogador</label>
@@ -42,7 +43,7 @@
             </div>
             <div class="campo">
                 <label for="nick">nick do jogador</label>
-                <input type="nick" name="nickdojogador" id="nick">
+                <input type="text" name="nickdojogador" id="nick">
             </div>
             <div class="campo">
                 <label for="email">email</label>
@@ -58,7 +59,7 @@
             </div>
             <div class="campo">
                 <label for="nascimento">nascimento</label>
-                <input type="date" name="nascimento" id="nascimento">
+                <input type="date" name="nascimento" id="nascimento" max="2020-12-31" min="1900-01-01">
             </div>
             <div class="campo">
                 <label for="pais">País</label>
@@ -67,6 +68,7 @@
                     <option value="BR">Brasil</option>
                     <option value="US">Estados Unidos</option>
                     <option value="ES">Espanha</option>
+                </select>
             </div>
 
             <fieldset>
@@ -79,19 +81,19 @@
 
                 <input type="radio" name="sexo" value="O" id="Outro">
                 <label for="Outro">Outro</label>
-                
+
                 <input type="radio" name="sexo" value="N" id="NA">
                 <label for="NA">Prefiro não dizer</label>
             </fieldset>
 
-            <div class="campo">
+            <div class="campo termos">
                 <input type="checkbox" name="check" id="check">
                 <label for="check">
-                    Declaro que li e aceito os termos de uso desre site
+                    Declaro que li e aceito os termos de uso deste site.
                 </label>
             </div>
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit" class="btn gradient">Cadastrar</button>
 
         </form>
 
