@@ -14,10 +14,16 @@
 
     <header>
         <div class="container cabecalho">
-            <a href="index.html">
-                <img src="images/Logo.svg" alt="Logo do site E-Players">
-            </a>
-            <nav>
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <a href="index.html">
+                    <img src="images/Logo.svg" alt="Logo do site E-Players">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="Voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="#horarios" title="Ir até a sessão de horários das partidas">HORÁRIOS</a></li>
@@ -99,12 +105,12 @@
             <section class="noticias" id="noticias">
                 <div class="card">
                     <img src="images/Teams/T1.jpeg" alt="Notícia sobre assunto 1">
-                        <div>
-                            <h4>Título da Notícia</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam mollitia qui inventore laborum
+                    <div>
+                        <h4>Título da Notícia</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam mollitia qui inventore laborum
                             voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
                             alias illo, magni facere obcaecati cum.</p>
-                        </div>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -112,8 +118,8 @@
                     <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam mollitia qui inventore laborum
-                        voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
-                        alias illo, magni facere obcaecati cum.</p>
+                            voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
+                            alias illo, magni facere obcaecati cum.</p>
                     </div>
                 </div>
 
@@ -122,8 +128,8 @@
                     <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam mollitia qui inventore laborum
-                        voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
-                        alias illo, magni facere obcaecati cum.</p>
+                            voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
+                            alias illo, magni facere obcaecati cum.</p>
                     </div>
                 </div>
 
@@ -132,8 +138,8 @@
                     <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam mollitia qui inventore laborum
-                        voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
-                        alias illo, magni facere obcaecati cum.</p>
+                            voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
+                            alias illo, magni facere obcaecati cum.</p>
                     </div>
                 </div>
 
@@ -142,8 +148,8 @@
                     <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam mollitia qui inventore laborum
-                        voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
-                        alias illo, magni facere obcaecati cum.</p>
+                            voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
+                            alias illo, magni facere obcaecati cum.</p>
                     </div>
                 </div>
 
@@ -152,14 +158,14 @@
                     <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam mollitia qui inventore laborum
-                        voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
-                        alias illo, magni facere obcaecati cum.</p>
+                            voluptates blanditiis, ullam voluptatem fugit, ducimus delectus autem numquam natus aperiam
+                            alias illo, magni facere obcaecati cum.</p>
                     </div>
                 </div>
             </section>
 
             <section class="recentes" id="resultados">
-                
+
                 <h3>PARTIDAS RECENTES</h3>
                 <div class="resultado">
 
@@ -310,7 +316,18 @@
         </div>
         <p>© 2077 SENAI Eletronic Sports - Todos os direitos reservados.</p>
     </footer>
+    <script>
 
+        function botaoMenu(){
+            var m = document.getElementById("menu");
+            if(m.style.display == "block"){
+                m.style.display = "none";
+            }else{
+                m.style.display = "block"
+            }
+        }
+
+    </script>
 </body>
 
 </html>
